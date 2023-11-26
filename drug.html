@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DRUG REACTION SEARCH</title>
+    <link rel="stylesheet" href="drugreaction.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="#home">
+                <li>Home</li>
+            </a>
+            <a href="#drug">
+                <li>Search</li>
+            </a>
+            <a href="#about">
+                <li>About</li>
+            </a>
+        </ul>
+    </nav>
+    <header id="home">
+        <h1>DRUG REACTION SEARCH</h1>
+        <h4>Provide the drug name to search</h4>
+    </header>
+
+    <h6 id="drug"><input onchange="search()" type="text" class="input" id="search"
+            placeholder="search by your drug name....." required></h6>
+    <h6> <a href="#drug"><input onclick="search()" type="submit" id="submit" value="SUBMIT"></a></h6>
+
+    <!-- display result		 -->
+    <div class="display"></div>
+    <footer id="about" class="about">
+        <p>Currently We are only providing Drug Reactions</p>
+        <p>Please use generic names to search for better results</p>
+        <p>Contact Us</p>
+        <p>Phone no.xxxxxxxxxx</p>
+        <p>E-mail:xyz@gmail.com</p>
+    </footer>
+
+
+
+    <!-- JQUERY -->
+    <!-- JQuery / This gives access to the jquery library -->
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Popper / Popper is required for bootstrap 4 JS functionality -->
+    <!-- Bootstrap Popper / Popper is required for bootstrap 4 JS functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS plugin / This makes bootstrap 4 JS work -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="drugreaction.js"></script>
+
+</body>
+
+</html>
